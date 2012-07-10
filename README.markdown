@@ -1,5 +1,5 @@
 ##LAB2
-1) Creation of static pages for our social network: home and concac
+1) Creation of static pages for our social network: home and concact (maurizio)
 
 	
 - `rails generate controller Pages home contact`
