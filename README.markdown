@@ -1,5 +1,6 @@
 ##LAB2
-1) Creation of static pages for our social network: home and concact
+1) Creation of static pages for our social network: home and concac
+
 	
 - `rails generate controller Pages home contact`
 	
