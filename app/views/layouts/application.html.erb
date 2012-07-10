@@ -15,7 +15,8 @@
 <body>
     <%= render 'layouts/header' %>
     <!-- Main content -->
-    <div class="container">
+    <div class="wrapper">
+    	<%= render 'layouts/menu' %>
       <% flash.each do |key, value| %>
         <%= content_tag(:div, value, class: "alert alert-#{key}") %>
       <% end %>

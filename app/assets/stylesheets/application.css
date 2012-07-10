@@ -5,3 +5,174 @@
  *= require_self
  *= require_tree . 
 */
+@font-face {
+    font-family: 'Alegre';
+    src: url('algre_sans_regular_nc-webfont.eot');
+    src: url('algre_sans_regular_nc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('algre_sans_regular_nc-webfont.woff') format('woff'),
+         url('algre_sans_regular_nc-webfont.ttf') format('truetype'),
+         url('algre_sans_regular_nc-webfont.svg#AlégreSansNCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #FAF8D9;
+  	margin: 0;
+  	padding: 0;
+	text-align: center;
+}
+header {
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+	margin: 0;
+	background-color: #ffffff;
+	text-align:left;
+}
+h1{
+	font-family: Alegre, verdana, sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 1px;
+}
+h2 {
+	font-size: 0.8em;
+	font-weight:normal;
+	padding: 0;
+	color: gray;
+}
+
+
+h3 {
+	font-size: 0.65em;
+	font-weight:bold;
+	padding: 0;
+	color: gray;
+}
+
+
+
+#logo {
+	margin-left:5%;
+}
+.wrapper {
+  	width: 75%; 
+	margin: 0 auto; 
+}
+nav{
+	display: block;
+	width: 100%;
+	clear: both;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+.menu {
+	background-color: #ffffff;
+	float: left;
+	text-align: center;
+	width: 33%;
+	min-width: 250px;
+	margin: 50px 0;
+	padding: 0px;
+}
+.menu a{
+	float: left;
+	text-align: center;
+	display: block;
+	width: 33%;
+	text-decoration: none;
+}
+.last{
+	border-right: 1px solid #B3B3B3;
+}
+#me { 
+	color: #F2BE33;
+}
+#esplora{ 
+	color: #91B80D;
+}
+
+#partecipa{
+ 	color: #5680B7;
+}
+#partecipa a{
+	width: 50%;
+}
+.submenu{
+	position: relative;
+	top:-30px;
+	height: 50px;
+	margin: 80px auto;
+	font-size: 0.8em;
+}
+.submenu li{
+	list-style: none;
+	float: left;
+	padding-right: 35px;
+	margin-left: 35px;
+	border-right: 1px solid #B3B3B3;
+	display: inline;
+	border-right: 1px solid #B3B3B3;
+}
+	
+.submenu ul{
+	
+	position:relative;
+	top:14px;
+	left:30px;
+	padding-left: 0px;
+		}
+		
+.submenu a {text-decoration:none; color:#B3B3B3;} 
+
+.submenu a:visited  {text-decoration:none; color:#B3B3B3;}		
+.submenu a:hover  {text-decoration:none;color: gray;}  
+.submenu a:active {text-decoration:none;color: gray;}  
+
+.content
+	{width: 100%;
+	height: 600px;
+	position: relative;
+	top: -80px;
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+	display: block;}
+	
+.column { 
+		position: relative;
+		top: 40px;
+		float: left;
+		width: 18%;
+		height: 280px;
+		padding: 1px;
+		border: 1px solid gray;
+		margin: 25px; 
+	
+	}
+.column.first { margin-left: 55px; }
+
+.column.last { margin-right: 0; }
+.column img { 
+	position:relative;
+	top: 8px;
+	padding: 2px;
+	}
+.titoli{position: relative; top:-10px; text-align:left;padding-left:10px;font-size:1em;}
+.titoli a {text-decoration:none; color:#91B80D; font-weight:bold;padding:0;margin:0;}
+
+h5 {margin: 1px;
+position: relative;
+top:-25px;
+padding-left: 9px;
+text-align:left;
+color:gray;}
+
+p {font-size:0.6em; text-align:left;padding-left:10px;position:relative; top:-32px; color:gray;}
+
+.punteggi{font-size:0.8em;
+font-weight:bold;
+position:relative;
+top:-40px;}
