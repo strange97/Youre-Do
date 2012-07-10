@@ -1,0 +1,10 @@
+<%= provide(:title, 'Search users') %>
+<h1>Found <%= pluralize(@users.length, "user") %></h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+	<%= render @users %>
+</ul>
+
+<%= will_paginate %>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <!-- The following Rails functions tell the application to use application.css (that automatically includes the CSS files created with the controllers)
+  	as stylesheet and application.js as javascript resource -->
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <% # the previous line is equal to stylesheet_link_tag"application", { :media => "all" }) %>
+  <%= javascript_include_tag "application" %>
+  <!-- The following Rails method automatically prevents Cross-Site Request Forgery (see http://en.wikipedia.org/wiki/Cross-site_request_forgery for further information) -->
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+  
+</head>
+<body>
+    <%= render 'layouts/header' %>
+    <!-- Main content -->
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+      <% end %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <!-- Show debug info if development is the active Rails environment -->
+      <%= debug(params) if Rails.env.development? %>
+    </div>
+    
+</body>
+</html>
