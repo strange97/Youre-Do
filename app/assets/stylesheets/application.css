@@ -18,7 +18,7 @@
 }
 body {
 	font-family: Arial, sans-serif;
-	background-color: #FAF8D9;
+	background-color: #FAF8D9 url('../images/paper.jpg');
   	margin: 0;
   	padding: 0;
 	text-align: center;
