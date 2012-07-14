@@ -205,3 +205,497 @@ td.chart-position {
   margin-top: 0px;
   margin-bottom: 15px
 }
+
+.column { 
+    
+    float: left;
+    width: 18%;
+    height: 375px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 20px; 
+  
+  }
+.column.row2{height: 345px;} 
+.column.first { 
+  margin-left: 40px; 
+  
+  }
+  
+.column.last { 
+  margin-right: 0; 
+  }
+
+.column img { 
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  margin-bottom:5px;
+  }
+  
+#progetti p.titoli {
+  
+  text-align:left;
+  font-size:1em;
+  padding:2px;
+  border: none;
+  margin:0;
+  top:0;
+  padding-top: 4px;
+  }
+  
+.titoli a {
+  text-decoration:none;
+   color:#91B80D; 
+   font-weight:bold;
+   padding-top: 10px;
+   margin-top:10px;
+  
+   
+   }
+
+h4 {
+  padding: 20px 0 5px 40px;
+  text-align: left;
+  font-size: 1.2em;
+  color: #91B80D;
+  font-weight:bold;
+  margin:0;
+}
+
+
+#progetti h5 {
+  margin: 1px;
+  top: 0;
+  padding:0;
+  text-align:left;
+  color:gray;
+  border:none;
+  
+  }
+
+#progetti p {
+  font-size:0.6em; 
+  text-align:left;
+  padding:0;
+  color:gray;
+  border:none;
+  margin:0;
+  top: 0;
+  margin-top:2px;
+}
+
+#progetti p.punteggi{
+  font-size:0.8em;
+  font-weight:bold;
+  
+  border-top: 1px dashed gray;
+  padding:4px 0 0 0;
+  }
+#progetti{
+ float: left;
+ margin-bottom: 50px;
+}
+
+/* dettaglio progetti */
+.bottomblock {
+  display:block;
+  float:left;
+  margin:15px 0 15px 0;
+  width: 100%;
+  height:235px;
+  background-color: white;
+  
+  
+}
+
+.text {
+  text-align: left;
+  color:#808080;
+  clear: both;
+  
+}
+
+.text h1{ 
+  margin:0;
+  padding:0;
+  color:#91B80D;
+}
+
+.text h2{
+  margin:0;
+  padding:0;
+  color:#91B80D;
+
+}
+
+.text h1 h2 {
+  display:inline;
+  }
+  
+  
+.text h3{
+  margin:0;
+  padding:0;
+}
+
+#dettaglio p {
+  top: 0;
+  font-size: 0.8em;
+  width:100%;
+}
+
+.leftblock .img {
+  display:block;
+  margin:0 auto;
+  width:100%;
+}
+
+.personaldata {
+  float: right;
+  padding-right: 75px;
+  padding-top: 45px;
+  font-size: 1em;
+  color: #808080;
+  margin: 0;
+  }
+
+#dettaglio #nome { 
+  color: grey;
+  font-weight: bold;
+  margin:0;
+}
+
+#breadcrumb {
+  font-size: 0.8em;
+  color:gray;
+  margin:0 0 10px 0;
+  
+}
+#breadcrumb a {text-decoration:none; color:gray;}
+#breadcrumb a:hover {text-decoration:none; color: black;}
+
+
+#provenienza {
+  font-size:0.7em;
+  font-weight: light;
+  margin:0;
+}
+
+.material {
+  
+  margin:0 15px 0 10px;
+  padding: 0;
+  text-align:center;
+}
+
+.material ul {
+
+  
+  padding:0;
+  
+  
+}
+
+.material li {
+  list-style: none;
+  float: left;
+  font-size: 0.8em;
+  margin:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline;
+  
+}
+  
+#dettaglio p.punteggio {
+  margin: 0 auto;
+  text-align:center;
+  font-size:2em;
+  color: #91B80D;
+  font-weight: bold;
+  padding:5;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted #91B80D;
+  
+}
+
+.dettagli {
+  font-size:0.7em;
+  font-weight: lighter;
+  padding-left: 20px;
+  
+}
+
+.progettini {
+  margin:0;
+  padding: 0;
+  text-align:center;
+  
+}
+
+.progettini ul {
+
+  margin:0;
+  padding:0;
+  
+  
+}
+
+.progettini li {
+  list-style: none;
+  float: left;
+  margin:0;
+  padding:0 21px 10px 0;
+  border-bottom: 1px dotted #91B80D;
+  display:center;
+}
+
+
+
+#butt_vota, #butt_contatta, #butt_hook, #butt_officina {
+  border-top: 1px solid #d5ed23;
+   background: #657805;
+   background: -webkit-gradient(linear, left top, left bottom, from(#96bc0d), to(#657805));
+   background: -webkit-linear-gradient(top, #96bc0d, #657805);
+   background: -moz-linear-gradient(top, #96bc0d, #657805);
+   background: -ms-linear-gradient(top, #96bc0d, #657805);
+   background: -o-linear-gradient(top, #96bc0d, #657805);
+   padding: 5px 10px;
+   margin:30px 16px 10px 0;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    color: white;
+   font-size: 14px;
+   font-family: Arial, Sans-Serif;
+   font-weight: bolder;
+   text-decoration: none;
+   vertical-align: middle;}
+   
+#butt_vota:hover, #butt_contatta:hover, #butt_hook:hover, #butt_officina:hover {
+   border-top-color: #a1c20f;
+   background: #a1c20f;
+   color: #ffffff;
+  }
+#bottonecss:active, #butt_contatta:active, #butt_hook:active, #butt_officina:active {
+   border-top-color: #e7ff5c;
+   background: #e7ff5c;
+   }
+
+.bottomblock h1{
+  padding: 10px 0 0 0;
+  color:#808080;
+  font-family: Alegre, verdana, sans-serif;
+  font-weight: lighter;
+}   
+
+.stars {
+  margin:0;
+  padding:0;
+}
+
+.stars li {
+  list-style:none;
+  float:left;
+  text-align:center;
+  margin:5px 0 25px 0;
+  padding: 0 54px 0 66px;
+  font-size:0.7em;
+  color:#808080;
+  background: url('stargray.jpg');
+}
+
+.stars a {
+  display:inline-block;
+  width:53px;
+  height:51px;
+  background: url('stargray.png') no-repeat center;
+  border: none;
+}
+
+.stars a:hover {
+  background: url('stargreen.png') no-repeat center;
+}
+
+.stars a:active {
+  background: url('stargreen.png') no-repeat center;
+}
+
+.buttons {
+  float:left;
+  width: 100%;
+  padding:0;
+  margin:25px 10px 25px 7px;
+  
+  
+}
+#dettaglio .leftblock {
+  padding: 15px 25px;
+  margin: 0;
+  width: 60%;
+  height: 600px;
+}
+#dettaglio .rightblock{
+  height: 600px;
+    margin: 0 0 0 2%;
+    padding: 15px 25px;
+    width: 30%;
+}
+
+/* aste */
+#aste{
+  height: 1000px;
+}
+#aste .text{
+padding: 20px 0 5px 40px;
+}
+#aste .leftblock{
+   width: 33%;
+}
+#aste .form {
+  height: 320px;
+  padding:10px;
+  border: 1px solid #B3B3B3;
+  margin: 10px 10px 25px 40px;
+  font-size:12px;
+  color:gray;
+  display:block;
+  text-align:left;
+}
+
+#aste .mappa{
+  
+  height:220px;
+  margin: 10px 10px 10px 40px;
+  padding:10px;
+}
+
+
+#aste .what {
+  weight:50%;
+  padding:0;
+  margin-bottom:5px;
+  display:block;
+}
+
+#aste .form input {
+  margin-bottom:15px;
+  width:99%;
+}
+
+#aste .form select {
+  margin-bottom:15px;
+  width:100%;
+  color: gray;
+}
+
+#aste .button {
+  width:33%;
+  margin-bottom:5px;
+  }
+  
+#aste .view {
+  float:left;
+  background: url('bottone.png') no-repeat center;
+  font-weight: normal;
+  color:white;
+  padding:5px;
+  border:none;
+  margin:0;
+  width:80px;
+  display:inline;
+  }
+
+#aste #bottonecss {
+  border-top: 1px solid #d5ed23;
+   background: #657805;
+   background: -webkit-gradient(linear, left top, left bottom, from(#96bc0d), to(#657805));
+   background: -webkit-linear-gradient(top, #96bc0d, #657805);
+   background: -moz-linear-gradient(top, #96bc0d, #657805);
+   background: -ms-linear-gradient(top, #96bc0d, #657805);
+   background: -o-linear-gradient(top, #96bc0d, #657805);
+   padding: 5px 10px;
+   margin-bottom:10px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    color: white;
+   font-size: 14px;
+   font-family: Arial, Sans-Serif;
+   font-weight: bolder;
+   text-decoration: none;
+   vertical-align: middle;}
+   
+#aste #bottonecss:hover {
+   border-top-color: #a1c20f;
+   background: #a1c20f;
+   color: #ffffff;
+  }
+#aste #bottonecss:active {
+   border-top-color: #e7ff5c;
+   background: #e7ff5c;
+   }
+
+#aste .form a {
+  text-decoration:underline;
+  padding:0;
+  margin:0;
+  color: gray;
+  display:inline;
+  float:left;
+}
+
+#aste .form a:hover  {color: #91B80D;}  
+ 
+#aste .mappa {
+  padding:0;
+  } 
+ 
+#aste .mappa img {
+  width:100%;
+  margin-top:10px;
+} 
+
+#aste .mappa h4{
+  width: 250px;
+  float:left;
+  font-size:14px;
+}
+
+
+
+#aste table, td, th {
+  border-collapse:collapse;
+  border: none;
+}
+#aste td {
+  text-align:left;
+  padding:15px;
+  font-size: 0.8em;
+  }
+#aste table {
+  width:100%; 
+}
+#aste tr {
+  color:#B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+}
+#aste th {
+  color:#5680B7;
+}
+#aste .rightblock {
+    border: 1px solid #B3B3B3;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    width: 59%;
+}
+.alt4 a {text-decoration:none; color:#5680B7;} 
+.alt4 a:visited  {text-decoration:none; color:#5680B7;}   
+.alt4 a:hover  {text-decoration:none;color: #5680B7;}  
+.alt4 a:active {text-decoration:none;color: #5680B7;}  

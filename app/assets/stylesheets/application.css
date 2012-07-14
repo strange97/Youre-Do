@@ -99,6 +99,19 @@ nav{
 #partecipa{
 	padding-right: 5%;
 }
+
+
+#me a:hover h3{ 
+	color: #F2BE33;
+}
+#esplora a:hover h3{ 
+	color: #91B80D;
+}
+
+#partecipa a:hover h3{
+ 	color: #5680B7;
+}
+
 .submenu{
 	display: block;
 	margin: 40px auto;
