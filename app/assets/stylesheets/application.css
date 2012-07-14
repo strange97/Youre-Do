@@ -5,20 +5,9 @@
  *= require_self
  *= require_tree . 
 */
-@font-face {
-    font-family: 'Alegre';
-    src: url('algre_sans_regular_nc-webfont.eot');
-    src: url('algre_sans_regular_nc-webfont.eot?#iefix') format('embedded-opentype'),
-         url('algre_sans_regular_nc-webfont.woff') format('woff'),
-         url('algre_sans_regular_nc-webfont.ttf') format('truetype'),
-         url('algre_sans_regular_nc-webfont.svg#AlégreSansNCRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 body {
 	font-family: Arial, sans-serif;
-	background-color: #FAF8D9 url('../images/paper.jpg');
+	background: url('paper.jpg');
   	margin: 0;
   	padding: 0;
 	text-align: center;
@@ -52,10 +41,8 @@ h3 {
 	color: gray;
 }
 
-
-
 #logo {
-	margin-left:5%;
+	margin-left:13%;
 }
 .wrapper {
   	width: 75%; 
@@ -68,48 +55,57 @@ nav{
 	margin: 0 auto;
 	background-color: #ffffff;
 }
+#mainmenu{
+	margin-top: 30px;
+}
+#mainmenu .content{
+	padding: 20px 0;
+}
 .menu {
 	background-color: #ffffff;
 	float: left;
 	text-align: center;
-	width: 33%;
+	width: 30%;
 	min-width: 250px;
-	margin: 50px 0;
-	padding: 0px;
+	margin: 0 0 50px 0;
+	padding: 20px 0;
 }
 .menu a{
 	float: left;
 	text-align: center;
 	display: block;
-	width: 33%;
+	width: 30%;
 	text-decoration: none;
 }
 .last{
 	border-right: 1px solid #B3B3B3;
 }
-#me { 
+#me{
+	padding-left: 5%;
+}
+#me h1{ 
 	color: #F2BE33;
 }
-#esplora{ 
+#esplora h1, .verde{ 
 	color: #91B80D;
 }
 
-#partecipa{
+#partecipa h1, .blu{
  	color: #5680B7;
 }
 #partecipa a{
 	width: 50%;
 }
+#partecipa{
+	padding-right: 5%;
+}
 .submenu{
-	position: relative;
-	top:-30px;
-	height: 50px;
-	margin: 80px auto;
+	display: block;
+	margin: 40px auto;
 	font-size: 0.8em;
 }
 .submenu li{
 	list-style: none;
-	float: left;
 	padding-right: 35px;
 	margin-left: 35px;
 	border-right: 1px solid #B3B3B3;
@@ -118,11 +114,11 @@ nav{
 }
 	
 .submenu ul{
-	
-	position:relative;
-	top:14px;
-	left:30px;
-	padding-left: 0px;
+	text-align: left;
+	clear: both;
+	display: block;
+	background-color: white;
+	padding: 15px 0;
 		}
 		
 .submenu a {text-decoration:none; color:#B3B3B3;} 
@@ -133,13 +129,13 @@ nav{
 
 .content
 	{width: 100%;
-	height: 600px;
+	/*height: 600px;
 	position: relative;
-	top: -80px;
+	top: -80px;*/
 	margin: 0 auto;
 	background-color: white;
 	text-align: center;
-	display: block;}
+	}
 	
 .column { 
 		position: relative;

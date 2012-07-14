@@ -21,10 +21,9 @@
         <%= content_tag(:div, value, class: "alert alert-#{key}") %>
       <% end %>
       <%= yield %>
-      <%= render 'layouts/footer' %>
-      <!-- Show debug info if development is the active Rails environment -->
-      <%= debug(params) if Rails.env.development? %>
-    </div>
-    
+   </div>
+   <%= render 'layouts/footer' %>
+   <!-- Show debug info if development is the active Rails environment -->
+   <%#= debug(params) if Rails.env.development? %>    
 </body>
 </html>

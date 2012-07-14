@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Alegre';
+    src: url(font-path('fonts/algre_sans_regular_nc-webfont.eot'));
+    src: url(font-path('fonts/algre_sans_regular_nc-webfont.eot') + '?#iefix') format('embedded-opentype'),
+         url(font-path('fonts/algre_sans_regular_nc-webfont.woff')) format('woff'),
+         url(font-path('fonts/algre_sans_regular_nc-webfont.ttf')) format('truetype'),
+         url(font-path('fonts/algre_sans_regular_nc-webfont.svg') + '#AlégreSansNCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

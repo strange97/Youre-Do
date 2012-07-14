@@ -1,26 +1,46 @@
 <%= provide(:title, @user.name) %>
-<div class="row">
-	<aside class="span4">
-		<section>
-			<h1>
-				<%= gravatar_for @user %>
-				<%= @user.name %>
-			</h1>
-		</section>
-		<section>
-			<%= render 'shared/stats' %>
-			<br/>
-			<%= link_to 'New message', new_message_path(:user => @user.id), class: "btn btn-large btn-primary" %>
-		</section>
-	</aside>
-	<div class="span8">
-	  <%= render 'follow_form' if signed_in? %>
-	  <% if @user.microposts.any? %>
-      <h3>Microposts (<%= @user.microposts.count %>)</h3>
-      <ol class="microposts">
-        <%= render @microposts %>
-      </ol>
-      <%= will_paginate @microposts %>
-    <% end %>
-  </div>
-</div>
+<%= render 'layouts/submenu' %>
+<div class= "content" id="profile">
+	<div id="colonnasx">
+		<div id="foto_utente"><%= gravatar_for @user, size: 170 %></div>
+		<div id="subfoto"><%= link_to "Modifica profilo", edit_user_path(current_user) %></div>
+	</div>
+				<div id="colonnadx">
+					<div id="nome">
+						<h1><%= @user.name %></h1><h2>Info generali</h2>
+					</div>
+					<%= render 'shared/stats' %>
+					<div id="box" >
+					<table>
+						<tr>
+  							<td>Professione </td>
+ 							<td class="alt1">Associato presso PLUG creativity</td>
+   						</tr>
+						<tr>
+  							<td>Formazione</td>
+  							<td class="alt1">Politecnico Internazionale "Scientia et Ars" di Vibo Valentia<br/>Politecnico di Torino</td>
+  						</tr>
+  						<tr>
+  							<td>Collegamenti</td>
+  							<td class="alt1">59 collegamenti</td>
+  						</tr>
+  						<tr>
+  							<td>Siti Web</td>
+  							<td class="alt1">Sito aziendale: www.google.com</td>
+  						</tr>
+  						<tr>
+  							<td>Social Network</td>
+  							<td class="alt2">https://twitter.com/<br/>http://www.behance.net/?search=martina+muggiri</td>
+  						</tr>
+  						<tr>
+  							<td>Link esterni</td>
+  							<td class="alt2">http://www.artinsieme-rc.it/<br/>http://www.gastretto.it/</td>
+  						</tr>
+  						<tr class="lastrow">
+  							<td>Luogo di residenza </td>
+  							<td class="alt3">MAPPA</td>
+  						</tr>
+					</table>
+				</div>
+				</div>
+			 </div>

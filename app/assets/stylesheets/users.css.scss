@@ -1,3 +1,184 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  color: #7E7E7E;
+  padding: 20px 0;
+}
+form
+{
+    font-size: 14px;
+    width:342px;
+    border: 1px solid #C3D4DB;
+    color:#444;
+    margin:0 auto;
+}
+fieldset
+{
+    padding:10px 20px;
+    border: 0;
+}
+label
+{
+    float: left;
+    text-align: left;
+    font-size:14px/22px;
+    margin:20px 0 0 6px;
+    width: 100%;
+}
+input[type=text],
+input[type=password]
+{
+    border:6px solid #F7F9FA;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -moz-box-shadow:2px 3px 3px rgba(0, 0, 0, 0.06) inset, 0 0 1px #95a2a7 inset;
+    -webkit-box-shadow:2px 3px 3px rgba(0, 0, 0, 0.06) inset, 0 0 1px #95a2a7 inset;
+    box-shadow:2px 3px 3px rgba(0, 0, 0, 0.06) inset, 0 0 1px #95a2a7 inset;
+    margin:3px 0 4px;
+    padding:8px 6px;
+    width:270px;
+    display:block;
+}
+.checkboxes {width: 49%;
+      float: left;}
+      
+.rLink{padding:0 6px 0 0; font-size:11px; float:right;}
+form a{color:#999;}
+form a:hover, .box a:focus{text-decoration:underline;}
+form a:active{color:#f84747;}
+.btnLogin {
+    outline: none;
+ cursor: pointer;
+ float: right;
+ text-align: center;
+ text-decoration: none;
+ font: bold 21px DINPro, Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 5px 10px;
+ padding-top: 0px;
+margin-top: 30px;
+margin-bottom: 30px;
+ border: solid 1px #cccccc;
+ background: #cccccc;
+ background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
+ background: -webkit-linear-gradient(top,  #cccccc,  #999999);
+ background: -moz-linear-gradient(top,  #cccccc,  #999999);
+ background: -ms-linear-gradient(top,  #cccccc,  #999999);
+ background: -o-linear-gradient(top,  #cccccc,  #999999);
+ background: linear-gradient(top,  #cccccc,  #999999);
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+a.btnLogin:hover{text-decoration: none;}
+.btnLogin:hover,
+.btnLogin:focus,
+.btnLogin:active{
+    background:gray;
+    background:-moz-linear-gradient(top, gray, gray);
+    background:-webkit-gradient(linear, left top, left bottom, from(gray), to(gray));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7acbed', EndColorStr='#badff3')";
+}
+.btnLogin:active
+{
+    text-shadow:rgba(0,0,0,0.3) 0 -1px 0px; 
+}
+
+#box-iscriviti {
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #efefef;
+  float: left;
+}
+#bordosuperiore {
+  width: 60%;
+    margin:3px 0 3px;
+    padding:9px 3px;
+  padding-top: 30px;
+}
+
+#colonnasx {
+  float:left;
+  width: 12.5%;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+#colonnadx {
+  float:left;
+  width: 78%;
+  margin-left: 35px;
+  margin-top: 25px;
+}
+#foto_utente {
+  width: 100%;
+  float: left;
+}
+
+#subfoto {
+  color: #B3B3B3;
+  float: left;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align:center;
+  width:100%;
+}
+#nome {
+  float:left;
+  color: #F2BE33;
+}
+#nome h1 {
+  display: inline;
+  padding: 1px 10px 1px 0;
+  border-right: 1px solid #B3B3B3;
+}
+#nome h2 {
+  display: inline;
+  padding-left: 10px;
+}
+.stats{
+  text-align: right;
+}
+#box {
+  float:left;
+  width:100%;
+  margin-top: 70px;
+  border: 1px solid #B3B3B3;
+  padding: 10px;
+}
+table, td, th {
+  border-collapse:collapse;
+  border: none;
+}
+td {
+  text-align:left;
+  padding:15px;
+  font-size: 0.8em;
+  }
+table {
+  width:100%; 
+}
+tr {
+  color:#B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+}
+#box td.alt1 {
+  color:black;
+}
+#box td.alt2 {
+  color:#5680B7;
+}
+#box td.alt3 {
+  color:#91B80D;
+}
+tr.lastrow {
+  border-bottom: none;
+}
+#profile{
+  float: left;
+  margin-bottom: 50px;
+}

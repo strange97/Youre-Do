@@ -5,17 +5,17 @@
 			<%= @user.followed_users.count %>
 		</strong>
 		following
-	</a>
+	</a><br />
 	<a href="<%= followers_user_path(@user) %>">
 		<strong id="followers" class="stat">
 			<%= @user.followers.count %>
 		</strong>
 		followers
 	</a>
-	<a href="<%= messages_user_path(@user) %>">
+	<!--a href="<%#= messages_user_path(@user) %>">
 		<strong id="messages" class="stat">
-			<%= @user.unread_message_count %>
+			<%#= @user.unread_message_count %>
 		</strong>
 		unread messages
-	</a>
+	</a-->
 </div>

@@ -1,3 +1,207 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#new_micropost{
+  border: 0;
+  width: 100%;
+}
+.content {
+  margin: 0 auto;
+  text-align: center;
+  padding: 35px 0;
+}
+.footer { 
+  margin: auto;
+  width: 75%;
+}
+.leftblock {
+  float:left;
+  display:block;
+  width: 63.5%;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.rightblock {
+  float: left;
+  display:block;
+  width: 33%;
+  background-color: white;
+  margin-left: 2.7%;
+  padding-bottom: 10px;
+}
+.box1 {
+  width: 100%;
+  padding-right: 5px;
+  background-color: white;
+  float: left;
+}
+.foto1 {
+  width: 10%;
+  float: left;
+  margin-left:20px;
+  padding-top: 40px;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 55px;
+  border-right: 1px solid #B3B3B3;
+}
+.foto1 img{
+  width: 100%;
+}
+.pubblica {
+  width: 83%;
+  float: right;
+  border-bottom: 1px solid #B3B3B3;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+#micropost_content {
+  width: 70%;
+  height: 20px;
+  float: left;
+  padding: 10px;
+  border:1px solid #B3B3B3;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 50px 10px 50px 10px;
+  text-align:left;
+  color:#B3B3B3;
+}
+.button {
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.foto2 {
+  width: 10%;
+  float: left;
+  margin-left:20px;
+  padding-right: 10px;
+  padding-bottom: 133px;
+  border-right: 1px solid #B3B3B3;
+}
+.foto2 img {
+  width: 100%;
+}
+#testo {
+  color: #B3B3B3;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.username-title {
+  color: black;
+}
+#testo2 {
+  color: black;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  float: left;
+}
+.Mipiace {
+  text-align: left;
+  padding-right: 43px;
+}
+.Commenta{
+  padding-right: 24px;
+}
+#aggicom {
+  width: 80%;
+  float: left;
+  padding: 10px;
+  border:1px solid #B3B3B3;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align:left;
+  color:#B3B3B3;
+}
+.foto3 {
+  width: 10%;
+  float: left;
+  margin-left:20px;
+  padding-right: 10px;
+  padding-bottom: 133px;
+  border-right: 1px solid #B3B3B3;
+}
+.foto3 img {
+  width: 100%;
+}
+#immaginesolo {
+  float: left;
+  padding-right: 200px;
+  padding-left: 10px;
+}
+#punteggio {
+  color:#F2BE33;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 15px
+}
+.box2 { 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #B3B3B3;
+  float: left;
+  width: 90%;
+  margin: 0 5%;
+}
+
+a#counter { background: url('/assets/bottone.png') no-repeat center center;
+      padding: 20px;
+      margin-bottom: 5px;
+      display: block;
+      text-decoration:none;
+      color:white;}
+
+a:visited#counter {text-decoration:none; color:white;}    
+a:hover#counter  {text-decoration:none;color: white;}  
+a:active#counter {text-decoration:none;color: white;} 
+
+#classifica, #conosci {
+  color:#91B80D;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 15px
+}
+.box2 li{
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #B3B3B3;
+}
+.box2 table{
+  margin: 0 auto;
+  border: 0px;
+  border-collapse: separate;
+}
+td {
+  text-align:center;
+  font-size: 1em;
+} 
+td.chart-craftsman { 
+  border: 2px solid #B3B3B3;
+  padding: 10px;        
+}
+td.chart-position {
+  border: 0px;
+  padding: 10px;
+}
+.box2 tr {
+  margin-bottom: 10px;
+}
+#read-more a {text-decoration:none; color:#B3B3B3;} 
+#read-more a:visited  {text-decoration:none; color:#B3B3B3;}    
+#read-more a:hover  {text-decoration:none;color: gray;}  
+#read-more a:active {text-decoration:none;color: gray;} 
+
+#attività {
+  color:#B3B3B3;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 15px
+}

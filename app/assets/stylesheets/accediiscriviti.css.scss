@@ -1,0 +1,120 @@
+.menuaccediiscriviti {
+  background-color: transparent;
+  height: 50px;
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+  width:100%; 
+}
+.menuaccediiscriviti li{
+  list-style: none;
+  float: right;
+  padding-right: 35px;
+  margin-left: 35px;
+  display: inline;
+  border-right: 1px solid #B3B3B3;
+}
+.menuaccediiscriviti ul{
+  width: 72%;
+  display: block;
+  margin: 0 auto;
+}
+.menuaccediiscriviti a {text-decoration:none; color:#B3B3B3;} 
+
+.menuaccediiscriviti a:visited  {text-decoration:none; color:#B3B3B3;}    
+.menuaccediiscriviti a:hover  {text-decoration:none;color: gray;}  
+.menuaccediiscriviti a:active {text-decoration:none;color: gray;} 
+
+
+.immagini{
+padding: 20px 0;
+}
+
+.immagini h1{
+  padding: 5px 0;
+  color: #F2BE33;
+}
+#azienda {
+  color: gray;
+  text-align: center;
+  float: left;
+  width: 25%;
+  margin-left: 10%;
+  padding: 25px 0;
+  border: solid 1px #cccccc;
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+}
+#azienda strong{
+  font-family: Alegre, verdana, sans-serif;
+  font-size: 30px;
+  color: #F2BE33;
+  display: block;
+}
+#azienda a {text-decoration:none; color:#B3B3B3;} 
+
+#azienda a:visited  {text-decoration:none; color:#B3B3B3;}    
+#azienda a:hover  {text-decoration:none;color: gray;}  
+#azienda a:active {text-decoration:none;color: gray;} 
+
+#wiki {
+  color: gray;
+  text-align: center;
+  float: right;
+  margin-right: 10%;
+  width: 25%;
+  padding: 25px 0;
+  border: solid 1px #cccccc;
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+}
+#wiki strong{
+  font-family: Alegre, verdana, sans-serif;
+  font-size: 30px;
+   color: #91B80D;
+  display: block;
+}
+#wiki a {text-decoration:none; color:#B3B3B3;} 
+
+#wiki a:visited  {text-decoration:none; color:#B3B3B3;}   
+#wiki a:hover  {text-decoration:none;color: gray;}  
+#wiki a:active {text-decoration:none;color: gray;} 
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  margin: 20px 0;
+  padding-bottom: 200px;
+}
+
+.container h2{
+  padding: 25px 0;
+}
+#pulsante {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 30px DINPro, Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 10px 30px;
+margin-top: 30px;
+margin-bottom: 20px;
+ border: solid 1px #cccccc;
+ background: #cccccc;
+ background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
+ background: -webkit-linear-gradient(top,  #cccccc,  #999999);
+ background: -moz-linear-gradient(top,  #cccccc,  #999999);
+ background: -ms-linear-gradient(top,  #cccccc,  #999999);
+ background: -o-linear-gradient(top,  #cccccc,  #999999);
+ background: linear-gradient(top,  #cccccc,  #999999);
+ -moz-border-radius: 8px;
+ -webkit-border-radius: 8px;
+ border-radius: 8px;
+ -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+ box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}

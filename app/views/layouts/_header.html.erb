@@ -1,6 +1,25 @@
 <!-- Navigation bar -->
 <header>
-	<div id="logo"><img src="assets/logo.png" alt="YouRe-Do"/></div>
+	<div id="logo"><a href="/"><img src="/assets/logo.png" alt="YouRe-Do"/></a></div>
+		<nav class="menuaccediiscriviti"> 
+			<ul>
+				<% if not signed_in? %>
+					<li>
+						<%= link_to "Iscriviti", signup_path %>
+					</li>
+					<li>
+						<%= link_to "Accedi", signin_path %>
+					</li>		
+				<% else %>
+					<li>
+						<%= link_to "Logout", signout_path, method: "delete" %>
+					</li>
+					<li>
+						<%= gravatar_for current_user, size: 16 %> <%= current_user.name %>
+					</li>
+				<% end %>
+			</ul>	
+		</nav>	
 </header>
 
 			
