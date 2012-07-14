@@ -15,5 +15,14 @@ class PagesController < ApplicationController
   
   def help
   end
+  
+  def progetti
+  end
+  
+  def dettaglio
+  end
+  
+  def aste
+  end
 
 end

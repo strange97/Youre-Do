@@ -1,0 +1,48 @@
+<% if signed_in? %>
+<nav id="mainmenu">
+	<div class="menu" id="me">
+					<h1>ME</h1>
+					<h2>Visita la tua sezione personale</h2>
+					<a href="/">
+						<img src="/assets/home.png"/>
+						<h3>HOME</h3>
+					</a>
+					<a href="#">
+						<img src="/assets/miaoffic.png"/>
+						<h3>LA MIA OFFICINA</h3>
+					</a>
+					<a href="/users/<%= current_user.id %>" class="last">
+						<img src="/assets/prof.png"/>
+						<h3>IL MIO PROFILO</h3>
+					</a>
+				</div>
+				<div class="menu" id="esplora">
+					<h1>ESPLORA</h1>
+					<h2>Vota i progetti, scopri le officine e le aziende!</h2>
+						<a href="/progetti">
+							<img src="/assets/prog.png"/>
+							<h3>PROGETTI</h3>
+						</a>
+						<a href="#">
+							<img src="/assets/offic.png"/>
+							<h3>OFFICINE</h3>
+						</a>
+						<a href="#" class="last">
+							<img src="/assets/aziend.png"/>
+							<h3>AZIENDE</h3>
+						</a>
+				</div>
+				<div class="menu" id="partecipa">
+					<h1>PARTECIPA</h1>
+					<h2>Cerchi materie prime o eventi?</h2>
+						<a href="/aste">
+							<img src="/assets/aste.png"/>
+							<h3>ASTE MATERIALI</h3>
+						</a>
+						<a href="#">
+							<img src="/assets/event.png"/>
+							<h3>EVENTI</h3>
+						</a>
+				</div>
+			</nav>
+<% end %>

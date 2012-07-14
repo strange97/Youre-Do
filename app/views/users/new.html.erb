@@ -1,25 +1,39 @@
-<%= provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
-
-<div class="row">
-	<div class="span6 offset3">
-		<%= form_for(@user) do |f| %>
-			<%= render 'shared/error_messages', object: f.object %>
-		
+<%= provide(:title, 'ISCRIVITI') %>
+<div class="container">
+	<h1>ISCRIVITI</h1>
+	<%= form_for(@user) do |f| %>
+		<%= render 'shared/error_messages', object: f.object %>
+		<fieldset>
 			<%= f.label :name %>
 			<%= f.text_field :name %>
 			
-			<%= f.label :email %>
-			<%= f.text_field :email %>
+			 <label>Cognome</label>
+         	<input type="text">
 			
 			<%= f.label :password %>
 			<%= f.password_field :password %>
 			
-			<%= f.label :password_confirmation, "Confirmation" %>
+			<%= f.label :password_confirmation, "Conferma passoword" %>
 			<%= f.password_field :password_confirmation %>
 			
-			<%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
-		
-		<% end %>
-	</div>
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+			
+			 <label>Nazione</label>
+	         <input type="text">
+		     <label>Città</label>
+	         <input type="text">
+		     <label>Materiali che utilizzi<br>
+		     <div class="checkboxes"><input type="checkbox">Legno</br> 
+		     <input type="checkbox">Vetro</br>
+		     <input type="checkbox">Metallo </div>
+		     <div class="checkboxes"><input type="checkbox">Stoffa</br>
+		     <input type="checkbox">Plastica </br>
+		     <input type="checkbox">Carta/Cartone</div>
+		     </label>
+		     <label><input type="checkbox"><a href="#">Accetto le condizioni di utilizzo del servizio</a></label>
+			
+			<%= f.submit "Iscriviti", class: "btnLogin" %>
+		</fieldset>
+	<% end %>
 </div>

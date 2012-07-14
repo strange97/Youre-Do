@@ -1,21 +1,22 @@
-<% provide(:title, "Sign in") %>
-<h1>Sign in</h1>
+<% provide(:title, "ACCEDI") %>
+<div class="container">
+	<h1>ACCEDI</h1>
 
 <!-- sign in form -->
-<div class="row">
-  <div class="span6 offset3">
   	<!-- in this form_for we need to write the name and the path of the resource to use -->
     <%= form_for(:session, url: sessions_path) do |f|  %>
-
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+	  <fieldset>
+	      <%= f.label :email %>
+	      <%= f.text_field :email %>
+	
+	      <%= f.label :password %>
+	      <a href="#" class="rLink" tabindex="5">Hai dimenticato la password?</a>
+	      <%= f.password_field :password %>
+		   <label><input type="checkbox"/>Resta collegato</label>
+	      <%= f.submit "Accedi", class: "btnLogin" %>
+	      
+	      <div id="box-iscriviti"><span id="bordosuperiore">Non sei ancora registrato?</span> <%= link_to "Iscriviti", signup_path, class: "btnLogin" %></div>
+	      
+  	  </fieldset>
     <% end %>
-
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-  </div>
 </div>

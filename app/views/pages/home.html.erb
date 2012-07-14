@@ -1,31 +1,115 @@
 <% provide(:title, 'Home') %>
 <% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-      	<%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-   <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
-  </div> 
+  <div class= "content">
+	<div class="leftblock">
+		<div class="box1">
+			<div class="foto1"><%= gravatar_for current_user, size: 100 %></div>
+			<div class="pubblica">
+				<%= render 'shared/micropost_form' %>
+			</div>
+		</div>
+		<%= render 'shared/feed' %>
+		<div class="box1">
+						<div class="foto2"><img src="/assets/foto2.png" alt="Daniela Martino"/>
+						</div>
+						<div class="pubblica">
+							<div id="testo">
+								<span class="username-title">Daniela Martino</span>
+								<span class="user-action"> ha inserito un progetto "Atelier inside-outside"</span>
+							</div>
+							<div class="immagini">
+								<img src="/assets/foto4.png"/>
+								<img src="/assets/foto5.png"/>
+								<img src="/assets/foto6.png"/>
+								<img src="/assets/foto7.png"/>
+								<img src="/assets/foto8.png"/>
+							</div>
+							<div id="testo2">
+								<span class="Mipiace">Mi piace</span>
+								<span class="Commenta">Commenta</span>
+								<span class="Condividi">Condividi</span>
+							</div>
+							<div id="aggicom">Aggiungi un commento...
+							</div>
+						</div>
+					</div>
+					<div class="box1">
+						<div class="foto3"><img src="/assets/foto3.png" alt="Davide Rossi"/>
+						</div>
+						<div class="pubblica">
+							<div id="testo">
+								<span class="username-title">Davide Rossi</span>
+								<span class="user-action"> ha inserito un video "Workshop Half Full"</span>
+							</div>
+							<div id="immaginesolo">
+								<img src="/assets/foto9.png"/>
+							</div>
+							<div id="testo2">
+								<span class="Mipiace">Mi piace</span>
+								<span class="Commenta">Commenta</span>
+								<span class="Condividi">Condividi</span>
+							</div>
+							<div id="aggicom">Aggiungi un commento...
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="rightblock">
+				<div class="box2">
+					<h2 id="punteggio">IL MIO PUNTEGGIO</h2>
+					<a id="counter" href="#">9898512</a>
+					<div>Hai 10 progetti in officina.</br>La tua officina è stata visitata 75 volte.</br>50 artigiani ti hanno votato.</div>
+				</div>
+				<div class="box2">
+					<h2 id="classifica">CLASSIFICA ARTIGIANI</h2>	
+					<table>
+						<tr>
+  							<td class="chart-position">1</td>
+ 							<td class="chart-craftsman">Gianluca Buttinelli</</td>
+   						</tr>
+						<tr>
+  							<td class="chart-position">2</td>
+  							<td class="chart-craftsman">Marco Bucci</td>
+  						</tr>
+  					</table>
+  					<div id="read-more"><a href="#">
+  						<h1>. . .</h1></a>
+  					</div>	
+				</div>	
+				<div class="box2">
+					<h2 id="conosci">POTRESTI CONOSCERE</h2>	
+						<div class="immagini">
+								<a href="#"><img src="/assets/foto10.png"/></a>
+								<a href="#"><img src="/assets/foto11.png"/></a>
+								<a href="#"><img src="/assets/foto12.png"/></a>
+								<a href="#"><img src="/assets/foto13.png"/></a>
+								<a href="#"><img src="/assets/foto14.png"/></a>
+						</div>
+  				</div>
+  				<div class="box2">
+					<h2 id="attività">ATTIVITA' RECENTI</h2>
+					<div>1 asta attiva</br>Parteciperò al Lab123</br>Luisa ti ha votato</div>
+				</div>	
+				</div>	
+			</div>
+		</div>
 <% else %>
-  <div class="center hero-unit">
-    <h1>Welcome to Room 5T</h1>
-
-    <h2>
-      This is the home page for the social network named Room5T.
-    </h2>
-
-    <%= link_to "Sign up now!", signup_path, 
-                                class: "btn btn-large btn-primary" %>
+  <div class="container">	
+	<div class= "immagini"> 
+		<h1>SOSTENIBILIT&Agrave;, <span class="verde">AUTO-PRODUZIONE</span> <span class="blu">E ARTIGIANATO</span></h1>
+		<img src="assets/sostenibilita.jpg" align="absmiddle" width="235" height=182" hspace="10"/>
+		<img src="assets/fablab.jpg" align="absmiddle" width="265" height="182" hspace="10"/>
+		<img src="assets/artigiano.jpg" align="absmiddle" width="235" height="182" hspace="10"/>
+	</div> 
+	<%= link_to "Unisciti al Network", signup_path, id: "pulsante" %>
+    <h2>Entra a far parte della rete di You Re-Do, è facile e velocissimo!</h2>
+    <div id="azienda">
+    	<strong>AZIENDA, ASSOCIAZIONE?</strong>
+    	Diventa partner di <a href="#">You Re-Do</a>
+  	</div>
+	<div id="wiki">
+    	<strong>Vuoi condividere il tuo sapere?</strong>
+   		Diventa coautore della wiki <a href="http://www.opencrafts.org/">OpenCrafts.org</a>
+	</div>
   </div>
 <% end %> 

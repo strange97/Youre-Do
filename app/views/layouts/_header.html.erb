@@ -1,5 +1,41 @@
 <!-- Navigation bar -->
-<header class="navbar navbar-fixed-top">
+<header>
+	<div id="logo"><a href="/"><img src="/assets/logo.png" alt="YouRe-Do"/></a></div>
+	
+	<% if signed_in? %>
+            <%= form_tag search_users_path, :method => 'get', :class => 'form-wrapper' do %>
+    				<%= text_field_tag :search, params[:search], :id => 'search', :placeholder => 'Cerca nel sito...' %>
+    				<%= submit_tag "Cerca", :name => nil, :class => 'btnRicerca' %>
+			<% end %>
+	<% end %>
+		<nav class="menuaccediiscriviti"> 
+			<ul>
+				<% if not signed_in? %>
+					<li>
+						<%= link_to "Iscriviti", signup_path %>
+					</li>
+					<li>
+						<%= link_to "Accedi", signin_path %>
+					</li>		
+				<% else %>
+					<li>
+						<%= link_to "Logout", signout_path, method: "delete" %>
+					</li>
+					<li class="gravatar">
+						<%= gravatar_for current_user, size: 25 %> <%= current_user.name %>
+					</li>
+					<li class="icone">
+						<a href="#"><img src="/assets/icona1.png" alt="eventi"/></a>
+            			<a href="#"><img src="/assets/icona2.png" alt="messaggi"/></a>
+            			<a href="#"><img src="/assets/icona3.png" alt="materiali"/></a>
+            		</li>
+				<% end %>
+			</ul>	
+		</nav>	
+</header>
+
+			
+<!--header class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
 			<%= link_to "room5t", root_path, id: "logo" %>
@@ -47,4 +83,4 @@
 			</nav>
 		</div>
 	</div>
-</header>
+</header-->

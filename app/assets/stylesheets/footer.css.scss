@@ -1,0 +1,29 @@
+.info {
+  margin-top:30px;
+  height: 50px;
+  font-size: 12px;
+  background: white;
+  clear: both;
+}
+
+.info li{
+  list-style: none;
+  float: right;
+  padding-right: 35px;
+  margin-left: 35px;
+  display: inline;
+  border-right: 1px solid #B3B3B3;
+}
+
+.info ul{
+  width: 73%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.info a {text-decoration:none; color:#B3B3B3;} 
+
+.info a:visited  {text-decoration:none; color:#B3B3B3;}   
+.info a:hover  {text-decoration:none;color: gray;}  
+.info a:active {text-decoration:none;color: gray;} 

@@ -32,6 +32,12 @@ Room5T::Application.routes.draw do
   match '/about', to: 'pages#about'
   
   match '/help', to: 'pages#help'
+  
+  match '/progetti', to: 'pages#progetti'
+  
+  match '/dettaglio', to: 'pages#dettaglio'
+  
+  match '/aste', to: 'pages#aste'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

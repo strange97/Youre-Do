@@ -5,3 +5,183 @@
  *= require_self
  *= require_tree . 
 */
+body {
+	font-family: Arial, sans-serif;
+	background: url('paper.jpg');
+  	margin: 0;
+  	padding: 0;
+	text-align: center;
+}
+header {
+	width: 100%;
+	height: 60px;
+	padding-top: 10px;
+	margin: 0;
+	background-color: #ffffff;
+	text-align:left;
+}
+h1{
+	font-family: Alegre, verdana, sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 1px;
+}
+h2 {
+	font-size: 0.8em;
+	font-weight:normal;
+	padding: 0;
+	color: gray;
+}
+
+
+h3 {
+	font-size: 0.65em;
+	font-weight:bold;
+	padding: 0;
+	color: gray;
+}
+
+#logo {
+	margin-left:13%;
+}
+.wrapper {
+  	width: 75%; 
+	margin: 0 auto; 
+}
+nav{
+	display: block;
+	width: 100%;
+	clear: both;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+#mainmenu{
+	margin-top: 30px;
+}
+#mainmenu .content{
+	padding: 20px 0;
+}
+.menu {
+	background-color: #ffffff;
+	float: left;
+	text-align: center;
+	width: 30%;
+	min-width: 250px;
+	margin: 0 0 50px 0;
+	padding: 20px 0;
+}
+.menu a{
+	float: left;
+	text-align: center;
+	display: block;
+	width: 30%;
+	text-decoration: none;
+}
+.last{
+	border-right: 1px solid #B3B3B3;
+}
+#me{
+	padding-left: 5%;
+}
+#me h1{ 
+	color: #F2BE33;
+}
+#esplora h1, .verde{ 
+	color: #91B80D;
+}
+
+#partecipa h1, .blu{
+ 	color: #5680B7;
+}
+#partecipa a{
+	width: 50%;
+}
+#partecipa{
+	padding-right: 5%;
+}
+
+
+#me a:hover h3{ 
+	color: #F2BE33;
+}
+#esplora a:hover h3{ 
+	color: #91B80D;
+}
+
+#partecipa a:hover h3{
+ 	color: #5680B7;
+}
+
+.submenu{
+	display: block;
+	margin: 40px auto;
+	font-size: 0.8em;
+}
+.submenu li{
+	list-style: none;
+	padding-right: 35px;
+	margin-left: 35px;
+	border-right: 1px solid #B3B3B3;
+	display: inline;
+	border-right: 1px solid #B3B3B3;
+}
+	
+.submenu ul{
+	text-align: left;
+	clear: both;
+	display: block;
+	background-color: white;
+	padding: 15px 0;
+		}
+		
+.submenu a {text-decoration:none; color:#B3B3B3;} 
+
+.submenu a:visited  {text-decoration:none; color:#B3B3B3;}		
+.submenu a:hover  {text-decoration:none;color: gray;}  
+.submenu a:active {text-decoration:none;color: gray;}  
+
+.content
+	{width: 100%;
+	/*height: 600px;
+	position: relative;
+	top: -80px;*/
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+	}
+	
+.column { 
+		position: relative;
+		top: 40px;
+		float: left;
+		width: 18%;
+		height: 280px;
+		padding: 1px;
+		border: 1px solid gray;
+		margin: 25px; 
+	
+	}
+.column.first { margin-left: 55px; }
+
+.column.last { margin-right: 0; }
+.column img { 
+	position:relative;
+	top: 8px;
+	padding: 2px;
+	}
+.titoli{position: relative; top:-10px; text-align:left;padding-left:10px;font-size:1em;}
+.titoli a {text-decoration:none; color:#91B80D; font-weight:bold;padding:0;margin:0;}
+
+h5 {margin: 1px;
+position: relative;
+top:-25px;
+padding-left: 9px;
+text-align:left;
+color:gray;}
+
+p {font-size:0.6em; text-align:left;padding-left:10px;position:relative; top:-32px; color:gray;}
+
+.punteggi{font-size:0.8em;
+font-weight:bold;
+position:relative;
+top:-40px;}
